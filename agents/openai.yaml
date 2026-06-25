@@ -1,0 +1,4 @@
+interface:
+  display_name: "Confluence Content Manager"
+  short_description: "Audit and maintain Confluence documentation"
+  default_prompt: "Use $confluence-content-manager to audit or update Confluence documentation."
