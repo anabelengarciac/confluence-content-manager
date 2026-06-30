@@ -1,14 +1,16 @@
-# Confluence Content Manager Skill
+# Confluence Content Operations
 
-![Status](https://img.shields.io/badge/status-showcase_ready-2ea44f)
+> Audits, standardizes, and improves knowledge-base pages so analytics teams can trust documentation as an operating asset.
+
+![Status](https://img.shields.io/badge/status-product_workflow-2ea44f)
 ![Domain](https://img.shields.io/badge/domain-knowledge_operations-0969da)
 ![Stack](https://img.shields.io/badge/stack-python_%7C_confluence_api_%7C_docs_automation-6f42c1)
 
-An AI-assisted documentation operations skill for auditing, standardizing, creating, and maintaining Confluence spaces at scale. It combines editorial judgment with API automation so documentation quality can be measured and improved systematically.
+An AI-assisted documentation operations workflow for auditing, standardizing, creating, and maintaining Confluence spaces at scale. It combines editorial judgment with API automation so documentation quality can be measured and improved systematically.
 
-## Why It Matters
+## Product Impact
 
-Documentation debt slows analytics teams down: stale pages, duplicated context, unclear ownership, and inconsistent templates make it harder to trust data products. This skill turns that problem into a repeatable workflow with inventory, quality checks, rewrite guidance, and controlled page updates.
+Documentation debt slows analytics teams down: stale pages, duplicated context, unclear ownership, and inconsistent templates make it harder to trust data products. This workflow turns that problem into a repeatable operating model with inventory, quality checks, rewrite guidance, and controlled page updates.
 
 | Business value | Technical value |
 | --- | --- |
@@ -26,7 +28,7 @@ Documentation debt slows analytics teams down: stale pages, duplicated context, 
 - Update existing pages through controlled API calls.
 - Standardize analytics documentation branches using domain-specific rules.
 
-## Workflow
+## Functional Flow
 
 ```mermaid
 flowchart TD
@@ -38,7 +40,7 @@ flowchart TD
     F --> G["Apply controlled update"]
 ```
 
-## Repository Structure
+## Code And Installation
 
 ```text
 .
@@ -71,6 +73,6 @@ python3 scripts/confluence_manager.py update-page --page-id 123456 --body-file /
 
 `Confluence REST API`  -  `documentation governance`  -  `Python automation`  -  `content operations`  -  `knowledge management`  -  `AI-assisted editing`  -  `workflow design`
 
-## Security
+## Public Scope
 
-This is a sanitized showcase repository. It contains no Confluence tenant URLs, tokens, emails, or internal page identifiers. Local credentials are expected through environment files outside the repo.
+This public version contains no Confluence tenant URLs, tokens, emails, or internal page identifiers. Local credentials are expected through environment files outside the repo.

@@ -1,6 +1,6 @@
 ---
 name: confluence-content-manager
-description: Audit, standardize, update, and create Confluence documentation for the "Analytics Documentation Team" space, especially when Codex must act as a documentation owner for inconsistent, outdated, duplicated, or poorly structured pages. Use when the user asks to review stale content, rewrite unclear documentation, align related pages, create missing documentation, or keep Confluence pages consistent with a shared editorial structure.
+description: Audit, standardize, update, and create Confluence documentation for the "Analytics Documentation Team" space, especially when an assistant must act as a documentation owner for inconsistent, outdated, duplicated, or poorly structured pages. Use when the user asks to review stale content, rewrite unclear documentation, align related pages, create missing documentation, or keep Confluence pages consistent with a shared editorial structure.
 ---
 
 # Confluence Content Manager

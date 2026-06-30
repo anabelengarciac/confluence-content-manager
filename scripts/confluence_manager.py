@@ -458,6 +458,8 @@ class ConfluenceClient:
 
     def update_page(self, *, page_id: str, title: str, body: str) -> dict[str, Any]:
         current = self.get_page(page_id)
+        # Business rule: Confluence updates must preserve version history so owners can audit
+        # what changed and roll back documentation if a standardization pass goes too far.
         version_number = int(current["version"]["number"]) + 1
         payload = {
             "id": str(page_id),
@@ -2133,6 +2135,8 @@ def build_data_domain_body(page: dict[str, Any]) -> tuple[str, list[str]]:
     logic_lines = signals.logic_points or ["No explicit raw-to-gold transformation steps were documented beyond the inferred schema behavior."]
     limitations = signals.limitations or ["No material data limitations were explicitly documented in the current page."]
 
+    # Business rule: inferred content is useful for recovery, but it must remain visibly
+    # marked so data owners know which documentation still needs human confirmation.
     changes = [
         "template headings applied",
         "documentation rebuilt using inferred schema, KPI, grain and join signals",
